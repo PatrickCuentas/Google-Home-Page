@@ -1,0 +1,40 @@
+svg {
+  width: 24px;
+  height: 24px;
+}
+img {
+  border-radius: 50%;
+}
+.header-container {
+  height: 3.5rem;
+  display: flex;
+  justify-content: flex-end;
+}
+/** HEADER CONTENT **/
+.header-content {
+  display: flex;
+  align-items: center;
+  /* background-color: yellow; */
+  height: 3.5rem;
+}
+.header-content a {
+  display: inline-block;
+  margin: 0 0.5rem;
+  text-decoration: none;
+  color: #73777b;
+}
+.header-content a:hover {
+  text-decoration: underline;
+}
+.header-content a:nth-last-child(3) {
+  margin-right: 1.2rem;
+}
+.header-content img {
+  display: inline-block;
+  margin: 0 1rem;
+  cursor: pointer;
+}
+.header-content a:hover img {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+/** MAIN CONTENT **/
