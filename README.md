@@ -1,1 +1,1 @@
-This is Patrick first git project
+Odin Project Google Home Page
