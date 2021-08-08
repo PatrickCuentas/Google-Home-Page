@@ -1,27 +1,32 @@
+* {
+  box-sizing: border-box;
+}
 svg {
   width: 24px;
   height: 24px;
 }
-img {
-  border-radius: 50%;
-}
-.header-container {
-  height: 3.5rem;
+.super-container {
   display: flex;
+  flex-direction: column;
+}
+/** HEADER CONTAINER **/
+.header-container {
+  display: flex;
+  padding: 0.8rem 0;
   justify-content: flex-end;
+  flex-grow: 1;
 }
 /** HEADER CONTENT **/
 .header-content {
   display: flex;
   align-items: center;
-  /* background-color: yellow; */
-  height: 3.5rem;
 }
 .header-content a {
   display: inline-block;
   margin: 0 0.5rem;
   text-decoration: none;
-  color: #73777b;
+  color: #321212;
+  font-size: 0.9rem;
 }
 .header-content a:hover {
   text-decoration: underline;
@@ -31,10 +36,85 @@ img {
 }
 .header-content img {
   display: inline-block;
-  margin: 0 1rem;
+  margin: 0 0.9rem;
   cursor: pointer;
+  border-radius: 50%;
 }
 .header-content a:hover img {
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
+/** MAIN CONTAINER **/
+.main-container {
+  min-height: 70vh;
+  flex-grow: 3;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
 /** MAIN CONTENT **/
+.search-bar {
+  display: flex;
+  align-items: center;
+  min-width: 29rem;
+  height: 2.8rem;
+  border: 1px solid #d5d7db;
+  margin: 1.7rem 0 2.5rem 0;
+  border-radius: 2rem;
+}
+.search-bar:hover {
+  border: 2.8px solid rgba(0, 0, 0, 0.1);
+}
+.search-bar .redondeadonorelieve:hover {
+  border: 2.8px solid rgba(0, 0, 0, 0.1);
+  border-left: 0;
+  border-right: 0;
+}
+.search-bar .redondeadonorelieve {
+  min-width: 24rem;
+  height: 2.8rem;
+  border: 1px solid #d5d7db;
+  border-left: 0;
+  border-right: 0;
+  outline: none;
+}
+.search-bar .svg {
+  padding: 0.7rem;
+  cursor: pointer;
+}
+.box-links {
+  margin-bottom: 1.6rem;
+}
+.box-links .box-border {
+  display: inline-block;
+}
+.box-links .box-style {
+  width: 10rem;
+  color: #321212;
+  text-decoration: none;
+  text-align: center;
+  margin: 0.5rem;
+  padding: 0.6rem;
+  background-color: #f4f5f6;
+}
+.box-links .box-style:hover {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.2rem;
+}
+
+.filled-text {
+  margin-top: 0.8rem;
+}
+.filled-text p {
+  color: #321212;
+}
+.filled-text a {
+  color: #1a0dab;
+  text-decoration: none;
+}
+.filled-text a:hover {
+  text-decoration: underline !important;
+}
+
