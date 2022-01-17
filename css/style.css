@@ -98,6 +98,7 @@ svg {
   margin: 0.5rem;
   padding: 0.6rem;
   background-color: #f4f5f6;
+  border: 1px solid transparent;
 }
 .box-links .box-style:hover {
   border: 1px solid rgba(0, 0, 0, 0.1);
